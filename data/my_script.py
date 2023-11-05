@@ -92,6 +92,13 @@ print(len(node))
 actions = ActionChains(driver)
 actions.move_to_element(node[0])
 audio_href = node[0].get_attribute("href")
+
+f = open(image_path +  "/link.txt", "w")
+f.write(audio_href)
+f.close()
+print(audio_href)
+
+
 my_logger.info("individuato link audio: " + audio_href)
 
 audio_mp3_file = image_path + "/downloaded_audio.mp3"
@@ -149,7 +156,7 @@ driver.save_screenshot(image_path + "/nowsecure8.png")
 
 page = "https://private.e-distribuzione.it/PortaleClienti/s/curvedicarico"
 driver.get(page)
-time.sleep(random.randint(3, 5))
+time.sleep(random.randint(5, 9))
 driver.save_screenshot(image_path + "/nowsecure8.png")
 my_logger.info("spostato sulla pagina con misure: " + page)
 
@@ -162,7 +169,7 @@ elem_xpath = "//button[contains(text(), 'Sergio Sebastiani')]"
 node = driver.find_elements(By.XPATH, elem_xpath)
 print(len(node))
 node[0].click()
-time.sleep(random.randint(3, 5))
+time.sleep(random.randint(5, 9))
 driver.save_screenshot(image_path + "/nowsecure9.png")
 my_logger.info("cliccato elemento epr uscire con xpath: " + elem_xpath)
 
@@ -170,7 +177,7 @@ elem_xpath = "//span[contains(text(), 'Esci')]"
 node = driver.find_elements(By.XPATH, elem_xpath)
 print(len(node))
 node[0].click()
-time.sleep(random.randint(3, 5))
+time.sleep(random.randint(5, 9))
 driver.save_screenshot(image_path + "/nowsecure10.png")
 my_logger.info("cliccato elemento epr uscire con xpath: " + elem_xpath)
 
