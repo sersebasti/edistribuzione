@@ -1,0 +1,1 @@
+https://developers.google.com/recaptcha/docs/faq#my-computer-or-network-may-be-sending-automated-queries

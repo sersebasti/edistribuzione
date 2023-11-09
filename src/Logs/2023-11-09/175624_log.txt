@@ -1,0 +1,10 @@
+Avvio scrapping script
+andato a pagina: https://private.e-distribuzione.it/PortaleClienti/s/login/
+abbassato il pop-up
+inserito username: ser.sebastiani@gmail.com
+inserito password: Merca2+tello
+cliccato ENTRA
+spostato su elemento iframe
+cliccato elemento tipo button con proprieta title: Get an audio challenge
+individuato link audio: https://developers.google.com/recaptcha/docs/faq#my-computer-or-network-may-be-sending-automated-queries
+salvato audio nel file: /src/2023-11-09_screen/downloaded_audio.mp3

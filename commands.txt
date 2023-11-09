@@ -2,4 +2,4 @@ run  iteractive:
 docker run -it --shm-size="2g"  -v ${PWD}/data:/data sersebasti/undetected_chromedriver_plus ipython
 
 run  script:
-docker run -it --shm-size="2g"  -v ${PWD}/data:/data sersebasti/undetected_chromedriver_plus ipython data/my_script.py
+docker run -it --shm-size="2g"  -v ${PWD}/src:/src sersebasti/undetected_chromedriver_plus:x.x.x ipython src/my_script.py
